@@ -46,7 +46,7 @@ local prices = {
   [22428] = {120,"T3"}; --Redemption Armor
   [22429] = {100,"T3"}; --Redemption Armor
   [22430] = {92,"T3"};--Redemption Armor
-  [22431] = {92,"T3"};--Redemption Armor  
+  [22431] = {92,"T3"};--Redemption Armor
   [22436] = {148,"T3"}; --Cryptstalker Armor
   [22437] = {136,"T3"}; --Cryptstalker Armor
   [22438] = {120,"T3"}; --Cryptstalker Armor
@@ -103,11 +103,11 @@ local prices = {
   [22517] = {96,"T3"}; --Vestments of Faith
   [22518] = {92,"T3"}; --Vestments of Faith
   [22519] = {84,"T3"}; --Vestments of Faith
-  [22520] = {0,"T3"}; --The Phylactery of Kel'Thuzad 
+  [22520] = {0,"T3"}; --The Phylactery of Kel'Thuzad
   [22691] = {200,"T3"}; --Corrupted Ashbringer
   [22733] = {0,"T3"}; --Staff Head of Atiesh
   [22798] = {300,"T3"}; --Might of Menethil
-  [22799] = {300,"T3"}; --Soulseeker 
+  [22799] = {300,"T3"}; --Soulseeker
   [22800] = {160,"T3"}; --Brimstone Staff
   [22801] = {140,"T3"}; --Spire of Twilight
   [22802] = {200,"T3"}; --Kingsfall
@@ -124,9 +124,9 @@ local prices = {
   [22815] = {88,"T3"}; --Severance
   [22816] = {72,"T3"}; --Hatchet of Sundered Bone
   [22818] = {92,"T3"}; --The Plague Bearer
-  [22819] = {180,"T3"}; --Shield of Condemnation 
+  [22819] = {180,"T3"}; --Shield of Condemnation
   [22820] = {72,"T3"}; --Wand of Fates
-  [22821] = {116,"T3"}; --Doomfinger 
+  [22821] = {116,"T3"}; --Doomfinger
   [22935] = {4,"T3"}; --Touch of Frost
   [22936] = {72,"T3"}; --Wristguards of Vengeance
   [22937] = {48,"T3"}; --Gem of Nerubis
@@ -172,20 +172,20 @@ local prices = {
   [23038] = {88,"T3"}; --Band of Unnatural Forces
   [23039] = {132,"T3"}; --The Eye of Nerub
   [23040] = {160,"T3"}; --Glyph of Deflection
-  [23041] = {160,"T3"}; --Slayer's Crest 
+  [23041] = {160,"T3"}; --Slayer's Crest
   [23042] = {12,"T3"}; --Loatheb's Reflection
   [23043] = {150,"T3"}; --The Face of Death
   [23044] = {116,"T3"}; --Harbinger of Doom
-  [23045] = {160,"T3"}; --Shroud of Dominion 
+  [23045] = {160,"T3"}; --Shroud of Dominion
   [23046] = {160,"T3"}; --The Restrained Essence of Sapphiron
   [23047] = {160,"T3"}; --Eye of the Dead
   [23048] = {160,"T3"}; --Sapphiron's Right Eye
-  [23049] = {160,"T3"}; --Sapphiron's Left Eye 
+  [23049] = {160,"T3"}; --Sapphiron's Left Eye
   [23050] = {160,"T3"}; --Cloak of the Necropolis
-  [23053] = {140,"T3"}; --Stormrage's Talisman of Seething 
+  [23053] = {140,"T3"}; --Stormrage's Talisman of Seething
   [23054] = {200,"T3"}; --"Gressil, Dawn of Ruin"
   [23056] = {240,"T3"}; --Hammer of the Twisting Nether
-  [23057] = {140,"T3"}; --Gem of Trapped Innocents 
+  [23057] = {140,"T3"}; --Gem of Trapped Innocents
   [23059] = {160,"T3"}; --Dreadnaught's Battlegear
   [23060] = {160,"T3"}; --Bonescythe Armor
   [23061] = {160,"T3"}; --Vestments of Faith
@@ -207,18 +207,18 @@ local prices = {
   [23226] = {104,"T3"}; --Ghoul Skin Tunic
   [23237] = {60,"T3"}; --Ring of Eternal Flame
   [23238] = {40,"T3"}; --Stygian Buckler
-  [23242] = {180,"T3"}; --Claw of the Frost Wyrm 
+  [23242] = {180,"T3"}; --Claw of the Frost Wyrm
   [23545] = {80,"T3"}; --Power of the Scourge
   [23547] = {80,"T3"}; --Resilience of the Scourge
   [23548] = {80,"T3"}; --Might of the Scourge
   [23549] = {120,"T3"}; --Fortitude of the Scourge
-  [23577] = {200,"T3"}; --The Hungering Cold 
+  [23577] = {200,"T3"}; --The Hungering Cold
   [23663] = {48,"T3"}; --Girdle of Elemental Fury
   [23664] = {48,"T3"}; --Pauldrons of Elemental Fury
   [23665] = {48,"T3"}; --Leggings of Elemental Fury
   [23666] = {48,"T3"}; --Belt of the Grand Crusader
   [23667] = {48,"T3"}; --Spaulders of the Grand Crusader
-  [23668] = {48,"T3"}; --Leggings of the Grand Crusader 
+  [23668] = {48,"T3"}; --Leggings of the Grand Crusader
 
     ---------------------------
     --- Temple of Ahn'Qiraj ---
@@ -405,10 +405,10 @@ local prices = {
     ----------------------
   [16818] = {32,"T2"}; --Netherwind Regalia
   [16832] = {40,"T2"}; --Bloodfang Armor
-  [16897] = {48,"T2"}; --Stormrage Raiment
+  [16897] = {48,"T2"}; --Stormrage Raiment --CHEST
   [16898] = {32,"T2"}; --Stormrage Raiment
   [16899] = {32,"T2"}; --Stormrage Raiment
-  [16900] = {40,"T2"}; --Stormrage Raiment
+  [16900] = {40,"T2"}; --Stormrage Raiment --HEAD
   [16901] = {32,"T2"}; --Stormrage Raiment
   [16902] = {40,"T2"}; --Stormrage Raiment
   [16903] = {32,"T2"}; --Stormrage Raiment
@@ -429,7 +429,7 @@ local prices = {
   [16918] = {28,"T2"}; --Netherwind Regalia
   [16919] = {32,"T2"}; --Vestments of Transcendence
   [16920] = {32,"T2"}; --Vestments of Transcendence
-  [16921] = {40,"T2"}; --Vestments of Transcendence
+  [16921] = {40,"T2"}; --Vestments of Transcendence HEAD
   [16922] = {32,"T2"}; --Vestments of Transcendence
   [16923] = {48,"T2"}; --Vestments of Transcendence
   [16924] = {40,"T2"}; --Vestments of Transcendence
@@ -440,7 +440,7 @@ local prices = {
   [16929] = {40,"T2"}; --Nemesis Raiment
   [16930] = {32,"T2"}; --Nemesis Raiment
   [16931] = {48,"T2"}; --Nemesis Raiment
-  [16932] = {40,"T2"}; --Nemesis Raiment
+  [16932] = {40,"T2"}; --Nemesis Raiment SHOULDER
   [16933] = {32,"T2"}; --Nemesis Raiment
   [16934] = {28,"T2"}; --Nemesis Raiment
   [16935] = {28,"T2"}; --Dragonstalker Armor
@@ -466,7 +466,7 @@ local prices = {
   [16955] = {40,"T2"}; --Judgement Armor
   [16956] = {32,"T2"}; --Judgement Armor
   [16957] = {32,"T2"}; --Judgement Armor
-  [16958] = {48,"T2"}; --Judgement Armor  
+  [16958] = {48,"T2"}; --Judgement Armor
   [16959] = {28,"T2"}; --Battlegear of Wrath
   [16960] = {32,"T2"}; --Battlegear of Wrath
   [16961] = {40,"T2"}; --Battlegear of Wrath
@@ -474,7 +474,7 @@ local prices = {
   [16963] = {40,"T2"}; --Battlegear of Wrath
   [16964] = {32,"T2"}; --Battlegear of Wrath
   [16965] = {32,"T2"}; --Battlegear of Wrath
-  [16966] = {48,"T2"}; --Battlegear of Wrath  
+  [16966] = {48,"T2"}; --Battlegear of Wrath
   [19003] = {52,"T2"}; --Head of Nefarian
   [19334] = {32,"T2"}; --The Untamed Blade
   [19335] = {20,"T2"}; --Spineshatter
@@ -499,7 +499,7 @@ local prices = {
   [19356] = {80,"T2"}; --Staff of the Shadow Flame
   [19357] = {32,"T2"}; --Herald of Woe
   [19358] = {12,"T2"}; --Draconic Maul
-  [19360] = {60,"T2"}; --Lok'amir il Romathis
+  [19360] = {60,"T2","Druid/Shaman>Priest"}; --Lok'amir il Romathis
   [19361] = {124,"T2"}; --"Ashjre'thul, Crossbow of Smiting"
   [19362] = {32,"T2"}; --Doom's Edge
   [19363] = {100,"T2"}; --"Crul'shoruk, Edge of Chaos"
@@ -562,14 +562,14 @@ local prices = {
     --- Molten Core ---
     -------------------
   [16665] = {0,"T1"}; --Tome of Tranquilizing Shot
-  [16795] = {12,"T1"}; --Arcanist Regalia
-  [16796] = {12,"T1"}; --Arcanist Regalia
-  [16797] = {12,"T1"}; --Arcanist Regalia
-  [16798] = {16,"T1"}; --Arcanist Regalia
-  [16799] = {8,"T1"}; --Arcanist Regalia
-  [16800] = {12,"T1"}; --Arcanist Regalia
-  [16801] = {12,"T1"}; --Arcanist Regalia
-  [16802] = {8,"T1"}; --Arcanist Regalia
+  [16795] = {12,"T1"}; --Arcanist Regalia HEAD
+  [16796] = {12,"T1"}; --Arcanist Regalia PANTS
+  [16797] = {12,"T1"}; --Arcanist Regalia SHOULDERS
+  [16798] = {16,"T1"}; --Arcanist Regalia ROBES
+  [16799] = {8,"T1"}; --Arcanist Regalia WRIST
+  [16800] = {12,"T1"}; --Arcanist Regalia BOOTS
+  [16801] = {12,"T1"}; --Arcanist Regalia GLOVES
+  [16802] = {8,"T1"}; --Arcanist Regalia BELT
   [16803] = {12,"T1"}; --Felheart Raiment
   [16804] = {8,"T1"}; --Felheart Raiment
   [16805] = {12,"T1"}; --Felheart Raiment
@@ -618,7 +618,7 @@ local prices = {
   [16850] = {8,"T1"}; --Giantstalker Armor
   [16851] = {8,"T1"}; --Giantstalker Armor
   [16852] = {12,"T1"}; --Giantstalker Armor
-  [16853] = {16,"T1"}; --Lawbringer Armor  
+  [16853] = {16,"T1"}; --Lawbringer Armor
   [16854] = {12,"T1"}; --Lawbringer Armor
   [16855] = {12,"T1"}; --Lawbringer Armor
   [16856] = {12,"T1"}; --Lawbringer Armor
@@ -637,13 +637,13 @@ local prices = {
   [17063] = {48,"T1"}; --Band of Accuria
   [17065] = {36,"T1"}; --Medallion of Steadfast Might
   [17066] = {24,"T1"}; --Drillborer Disk
-  [17069] = {40,"T1"}; --Striker's Mark
+  [17069] = {25,"T1","Melee DPS"}; --Striker's Mark (slightly more expensive than Blastershot Launcher)
   [17071] = {12,"T1"}; --Gutgore Ripper
   [17072] = {22,"T1"}; --Blastershot Launcher
-  [17073] = {12,"T1"}; --Earthshaker
+  [17073] = {12,"T1","PVP"}; --Earthshaker
   [17074] = {4,"T1"}; --Shadowstrike
-  [17076] = {22,"T1"}; --Bonereaver's Edge
-  [17077] = {4,"T1"}; --Crimson Shocker
+  [17076] = {40,"T1"}; --Bonereaver's Edge  (should be same price as Deathbringer)
+  [17077] = {4,"T1","PVP/Farm"}; --Crimson Shocker
   [17082] = {12,"T1"}; --Shard of the Flame
   [17102] = {20,"T1"}; --Cloak of the Shrouded Mists
   [17103] = {28,"T1"}; --Azuresong Mageblade
@@ -653,31 +653,31 @@ local prices = {
   [17107] = {16,"T1"}; --Dragon's Blood Cape
   [17109] = {8,"T1"}; --Choker of Enlightenment
   [17110] = {8,"T1"}; --Seal of the Archmagus
-  [17204] = {0,"T1"}; --Eye of Sulfuras
-  [18203] = {16,"T1"}; --Eskhandar's Right Claw
-  [18563] = {0,"T1"}; --Bindings of the Windseeker
-  [18564] = {0,"T1"}; --Bindings of the Windseeker
-  [18646] = {0,"T1"}; --The Eye of Divinity
-  [18703] = {0,"T1"}; --Ancient Petrified Leaf
-  [18803] = {12,"T1"}; --Finkle's Lava Dredger
-  [18805] = {32,"T1"}; --Core Hound Tooth
+  [17204] = {15,"T1"}; --Eye of Sulfuras (has to cost something)
+  [18203] = {16,"T1","Tanks"}; --Eskhandar's Right Claw
+  [18563] = {0,"T1"}; --Bindings of the Windseeker XXX both of them together a bit better than perdition
+  [18564] = {0,"T1"}; --Bindings of the Windseeker XXX
+  [18646] = {22,"T1"}; --The Eye of Divinity (Aurastone hammer price, since its 50/50)
+  [18703] = {22,"T1"}; --Ancient Petrified Leaf (same as eye)
+  [18803] = {12,"T1","PVP"}; --Finkle's Lava Dredger
+  [18805] = {32,"T1","Dagger rogues>Rest"}; --Core Hound Tooth OH
   [18806] = {4,"T1"}; --Core Forged Greaves
   [18808] = {16,"T1"}; --Gloves of the Hypnotic Flame
-  [18809] = {16,"T1"}; --Sash of Whispered Secrets
+  [18809] = {16,"T1","SPriest>Warlock"}; --Sash of Whispered Secrets
   [18810] = {36,"T1"}; --Wild Growth Spaulders
   [18811] = {4,"T1"}; --Fireproof Cloak
   [18812] = {28,"T1"}; --Wristguards of True Flight
-  [18814] = {42,"T1"}; --Choker of the Firelord
+  [18814] = {36,"T1"}; --Choker of the Firelord (should be same price as trinket, gets replaced at the same time)
   [18815] = {12,"T1"}; --Essence of the Pure Flame
-  [18816] = {40,"T1"}; --Perdition's Blade
+  [18816] = {40,"T1"}; --Perdition's Blade MH
   [18817] = {40,"T1"}; --Crown of Destruction
   [18820] = {36,"T1"}; --Talisman of Ephemeral Power
   [18821] = {36,"T1"}; --Quick Strike Ring
   [18822] = {12,"T1"}; --Obsidian Edged Blade
-  [18823] = {12,"T1"}; --Aged Core Leather Gloves
+  [18823] = {12,"T1","Dagger Rogues"}; --Aged Core Leather Gloves
   [18824] = {8,"T1"}; --Magma Tempered Boots
   [18829] = {20,"T1"}; --Deep Earth Spaulders
-  [18832] = {24,"T1"}; --Brutality Blade
+  [18832] = {24,"T1", "Sword Rogues>Warriors"}; --Brutality Blade OFFHAND
   [18842] = {24,"T1"}; --Staff of Dominance
   [18861] = {4,"T1"}; --Flamewalker Legplates
   [18861] = {4,"T1"}; --Flamewalker Legplates
@@ -690,23 +690,23 @@ local prices = {
   [19137] = {48,"T1"}; --Onslaught Girdle
   [19138] = {24,"T1"}; --Band of Sulfuras
   [19139] = {4,"T1"}; --Fireguard Shoulders
-  [19140] = {28,"T1"}; --Cauterizing Band
+  [19140] = {28,"T1","1 Per Healer"}; --Cauterizing Band
   [19142] = {12,"T1"}; --Fire Runed Grimoire
   [19143] = {14,"T1"}; --Flameguard Gauntlets
   [19144] = {12,"T1"}; --Sabatons of the Flamewalker
-  [19145] = {42,"T1"}; --Robe of Volatile Power
+  [19145] = {30,"T1"}; --Robe of Volatile Power (bit better than mageblade for WLs)
   [19146] = {8,"T1"}; --Wristguards of Stability
-  [19147] = {8,"T1"}; --Ring of Spell Power
+  [19147] = {30,"T1"}; --Ring of Spell Power (gets replaced later than mageblade but isn't as good as the trinket)
 
     ---------------------
     --- Single Bosses ---
     ---------------------
   [17064] = {52,"T1.5"}; --Shard of the Scale
-  [17067] = {12,"T1.5"}; --Ancient Cornerstone Grimoire
-  [17068] = {32,"T1.5"}; --Deathbringer
+  [17067] = {12,"T1.5","PVP"}; --Ancient Cornerstone Grimoire
+  [17068] = {32,"T1.5"}; --Deathbringer (seems fair)
   [17070] = {36,"T1.5"}; --Fang of the Mystics
-  [17075] = {24,"T1.5"}; --Vis'kag the Bloodletter
-  [17078] = {20,"T1.5"}; --Sapphiron Drape
+  [17075] = {32,"T1.5"}; --Vis'kag the Bloodletter (More expensive than Brutality blade, worse than Deathbringer)
+  [17078] = {16,"T1.5"}; --Sapphiron Drape
   [17111] = {16,"T1.5"}; --Blazefury Medallion
   [17112] = {20,"T1.5"}; --Empyrean Demolisher
   [17113] = {24,"T1.5"}; --Amberseal Keeper
@@ -714,11 +714,11 @@ local prices = {
   [18204] = {12,"T1.5"}; --Eskhandar's Pelt
   [18205] = {16,"T1.5"}; --Eskhandar's Collar
   [18208] = {12,"T1.5"}; --Drape of Benediction
-  [18403] = {48,"T1.5"}; --Head of Onyxia
-  [18404] = {48,"T1.5"}; --Head of Onyxia
-  [18406] = {48,"T1.5"}; --Head of Onyxia
-  [18422] = {48,"T1.5"}; --Head of Onyxia // Horde
-  [18423] = {48,"T1.5"}; --Head of Onyxia // Alliance
+  [18403] = {0,"T1.5"}; --Head of Onyxia
+  [18404] = {0,"T1.5"}; --Head of Onyxia
+  [18406] = {0,"T1.5"}; --Head of Onyxia
+  [18422] = {0,"T1.5"}; --Head of Onyxia // Horde
+  [18423] = {0,"T1.5"}; --Head of Onyxia // Alliance
   [18541] = {52,"T1.5"}; --Puissant Cape
   [18542] = {12,"T1.5"}; --Typhoon
   [18543] = {12,"T1.5"}; --Ring of Entropy
@@ -726,7 +726,7 @@ local prices = {
   [18545] = {4,"T1.5"}; --Leggings of Arcane Supremacy
   [18546] = {24,"T1.5"}; --Infernal Headcage
   [18547] = {4,"T1.5"}; --Unmelting Ice Girdle
-  [18665] = {0,"T1.5"}; --The Eye of Shadow 
+  [18665] = {0,"T1.5"}; --The Eye of Shadow
   [18704] = {0,"T1.5"}; --Mature Blue Dragon Sinew
   [18705] = {0,"T1.5"}; --Mature Black Dragon Sinew
   [18813] = {4,"T1.5"}; --Ring of Binding
@@ -780,8 +780,7 @@ local prices = {
 --[[
 itemID, itemType, itemSubType, itemEquipLoc, icon, itemClassID, itemSubClassID = GetItemInfoInstant(itemID or "itemString" or "itemName" or "itemLink")
 itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
-itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, 
-isCraftingReagent = GetItemInfo(itemID or "itemString" or "itemName" or "itemLink")
+itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, isCraftingReagent = GetItemInfo(itemID or "itemString" or "itemName" or "itemLink")
 Search for ItemMixin
 ]]
 local progress_scaling = {
@@ -811,6 +810,19 @@ function bepgp_prices:GetPrice(item,progress)
     end
   end
   return price
+end
+
+function bepgp_prices:GetItemNote(item)
+  if not (type(item)=="number" or type(item)=="string") then return end
+  local itemID, data, note
+  itemID = GetItemInfoInstant(item)
+  if (itemID) then
+    data = prices[itemID]
+    if (data) then
+      note = data[3]
+    end
+  end
+  return note or "no note"
 end
 
 function bepgp_prices:OnEnable()
@@ -849,4 +861,3 @@ function bepgp_prices:ADDON_LOADED(event,...)
 end
 
 bepgp_prices._prices = prices
-
