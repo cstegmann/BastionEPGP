@@ -1191,14 +1191,14 @@ function bepgp:GuildRosterSetOfficerNote(index,note,fromAddon)
       local main = self:parseAlt(name,note)
       if oldmain ~= nil then
         if main == nil or main ~= oldmain then
-          self:adminSay(string.format(L["Manually modified %s\'s note. Previous main was %s"],name,oldmain))
+          self:simpleSay(string.format(L["Manually modified %s\'s note. Previous main was %s"],name,oldmain))
           self:Print(string.format(L["|cffff0000Manually modified %s\'s note. Previous main was %s|r"],name,oldmain))
         end
       end
     end
     if oldepgp ~= nil then
       if epgp == nil or epgp ~= oldepgp then
-        self:adminSay(string.format(L["Manually modified %s\'s note. EPGP was %s"],name,oldepgp))
+        self:simpleSay(string.format(L["Manually modified %s\'s note. EPGP was %s"],name,oldepgp))
         self:Print(string.format(L["|cffff0000Manually modified %s\'s note. EPGP was %s|r"],name,oldepgp))
       end
     end
@@ -1247,16 +1247,6 @@ function bepgp:OnCommReceived(prefix, msg, distro, sender)
       out = string.format(L["%d EP awarded to Raid."],amount)
     elseif who == "STANDBY" and what == "AWARD" then
       out = string.format(L["%d EP awarded to Reserves."],amount)
-    elseif who == "VERSION" then
-      local out_of_date, version_type = self:parseVersion(self._versionString,what)
-      if (out_of_date) and self._newVersionNotification == nil then
-        self._newVersionNotification = true -- only inform once per session
-        self:Print(string.format(L["New %s version available: |cff00ff00%s|r"],version_type,what))
-        self:Print(string.format(L["Visit %s to update."],self._websiteString))
-      end
-      if (IsGuildLeader()) then
-        self:shareSettings()
-      end
     elseif who == "SETTINGS" then
       for progress,discount,decay,minep,alts,altspct in string.gmatch(what, "([^:]+):([^:]+):([^:]+):([^:]+):([^:]+):([^:]+)") do
         discount = tonumber(discount)
@@ -1380,11 +1370,11 @@ function bepgp:my_epgp_announce(use_main)
   local pr = ep/gp
   local msg = string.format(L["You now have: %d EP %d GP |cffffff00%.03f|r|cffff7f00PR|r."], ep,gp,pr)
   self:Print(msg)
-  local pr_decay, cap_ep, cap_pr = self:capcalc(ep,gp)
-  if pr_decay < 0 then
-    msg = string.format(L["Close to EPGP Cap. Next Decay will change your |cffff7f00PR|r by |cffff0000%.4g|r."],pr_decay)
-    self:Print(msg)
-  end
+  --local pr_decay, cap_ep, cap_pr = self:capcalc(ep,gp)
+  --if pr_decay < 0 then
+  --  msg = string.format(L["Close to EPGP Cap. Next Decay will change your |cffff7f00PR|r by |cffff0000%.4g|r."],pr_decay)
+  --  self:Print(msg)
+  --end
   self._myepgpTimer = nil
 end
 
@@ -2042,7 +2032,7 @@ function bepgp:givename_ep(getname,ep) -- awards ep to a single character
   self:debugPrint(string.format(L["Giving %d ep to %s%s."],ep,getname,postfix))
   if ep < 0 then -- inform admins and victim of penalties
     local msg = string.format(L["%s EP Penalty to %s%s."],ep,getname,postfix)
-    self:adminSay(msg)
+    self:simpleSay(msg)
     local logs = self:GetModule(addonName.."_logs")
     if logs then
       logs:addToLog(msg)
@@ -2068,7 +2058,7 @@ function bepgp:givename_gp(getname,gp) -- assigns gp to a single character
   self:update_gp(getname,newgp)
   self:debugPrint(string.format(L["Giving %d gp to %s%s."],gp,getname,postfix))
   local msg = string.format(L["Awarding %d GP to %s%s. (Previous: %d, New: %d)"],gp,getname,postfix,oldgp,math.max(bepgp.VARS.basegp,newgp))
-  self:adminSay(msg)
+  self:simpleSay(msg)
   local logs = self:GetModule(addonName.."_logs")
   if logs then
     logs:addToLog(msg)
