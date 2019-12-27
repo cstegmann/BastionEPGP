@@ -174,6 +174,18 @@ local admincmd, membercmd =
       end,
       order = 7,
     },
+    massaward = {
+      type = "execute",
+      name = L["Massaward"],
+      desc = L["Toggle Massaward GUI"],
+      func = function()
+        local ma = bepgp:GetModule(addonName.."_massaward")
+        if ma then
+          ma:Toggle()
+        end
+      end,
+      order = 8,
+    },
   }},
 {type = "group", handler = bepgp, args = {
     show = {
