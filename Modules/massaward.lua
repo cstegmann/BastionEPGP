@@ -91,7 +91,9 @@ function bepgp_massaward:multiadd()
   memberlist = {}
   --multi-line input into table
   for line in input_box_string:gmatch("[^\r\n,]+") do
-    table.insert(memberlist, line)
+    if not bepgp:table_contains(memberlist, line) then
+      table.insert(memberlist, line)
+    end
   end
   --output
   for k, v in ipairs(memberlist) do

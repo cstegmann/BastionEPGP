@@ -176,8 +176,8 @@ local admincmd, membercmd =
     },
     massaward = {
       type = "execute",
-      name = L["Massaward"],
-      desc = L["Toggle Massaward GUI"],
+      name = "Massaward",
+      desc = "Toggle Massaward GUI",
       func = function()
         local ma = bepgp:GetModule(addonName.."_massaward")
         if ma then
@@ -1672,6 +1672,15 @@ function bepgp:table_count(t)
   return count
 end
 
+function bepgp:table_contains(table, val)
+   for i=1,#table do
+      if table[i] == val then
+         return true
+      end
+   end
+   return false
+end
+
 function bepgp:camelCase(word)
   return string.gsub(word,"(%a)([%w_']*)",function(head,tail)
     return string.format("%s%s",string.upper(head),string.lower(tail))
@@ -1973,6 +1982,7 @@ function bepgp:get_ep(getname,officernote) -- gets ep by name or note
   end
   return
 end
+
 function bepgp:get_gp(getname,officernote) -- gets gp by name or officernote
   if (officernote) then
     local _,_,gp = string.find(officernote,".*{%d+:(%d+)}.*")
