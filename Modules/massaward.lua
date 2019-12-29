@@ -91,19 +91,17 @@ function bepgp_massaward:multiadd()
   memberlist = {}
   --multi-line input into table
   for line in input_box_string:gmatch("[^\r\n,]+") do
-    if not bepgp:table_contains(memberlist, line) then
-      table.insert(memberlist, line)
-    end
+    memberlist[line] = true
   end
   --output
-  for k, v in ipairs(memberlist) do
+  for k, v in pairs(memberlist) do
     if add_ep and add_gp then
       bepgp:Print("Both Add EP and Add GP Checked!")
       return false;
     elseif epgp_value ~= 0 and add_ep then
-      bepgp:givename_ep(v, tonumber(epgp_value))
+      bepgp:givename_ep(k, tonumber(epgp_value))
     elseif epgp_value ~= 0 and add_gp then
-      bepgp:givename_gp(v, tonumber(epgp_value))
+      bepgp:givename_gp(k, tonumber(epgp_value))
     end
   end
 end
