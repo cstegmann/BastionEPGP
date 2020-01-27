@@ -13,7 +13,7 @@ local input_box_string = ""
 
 function bepgp_massaward:OnEnable()
   local container = GUI:Create("Window")
-  container:SetTitle(L["BastionEPGP Mass Award"])
+  container:SetTitle("BastionEPGP Mass Award")
   container:SetWidth(445)
   container:SetHeight(360)
   container:EnableResize(false)
@@ -90,7 +90,7 @@ end
 function bepgp_massaward:multiadd()
   memberlist = {}
   --multi-line input into table
-  for line in input_box_string:gmatch("[^\r\n,]+") do
+  for line in input_box_string:gmatch("[^\r\n, ]+") do
     memberlist[line] = true
   end
   --output

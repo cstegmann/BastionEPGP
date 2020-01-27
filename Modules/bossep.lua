@@ -36,14 +36,14 @@ local mcBosses = {
 }
 
 local bwlBosses = {
-  ["Razorgore the Untamed"] = 70,
-	["Vaelastrasz the Corrupt"] = 70,
-	["Broodlord Lashlayer"] = 70,
-	["Firemaw"] = 70,
-	["Ebonroc"] = 70,
-	["Flamegor"] = 70,
-	["Chromaggus"] = 70,
-	["Nefarian"] = 100,
+  ["Razorgore the Untamed"] = 80,
+	["Vaelastrasz the Corrupt"] = 80,
+	["Broodlord Lashlayer"] = 80,
+	["Firemaw"] = 80,
+	["Ebonroc"] = 80,
+	["Flamegor"] = 80,
+	["Chromaggus"] = 120,
+	["Nefarian"] = 180,
 }
 
 local zgBosses = {
