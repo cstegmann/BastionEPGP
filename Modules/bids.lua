@@ -5,8 +5,10 @@ local C = LibStub("LibCrayon-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 local DF = LibStub("LibDeformat-3.0")
 local T = LibStub("LibQTip-1.0")
+local GUI = LibStub("AceGUI-3.0")
 
 bepgp_bids.bids_main,bepgp_bids.bids_off,bepgp_bids.bid_item = {},{},{}
+bepgp_bids.masterlooter = nil
 local bids_blacklist = {}
 local bidlink = {
   ["ms"]=L["|cffFF3333|Hbepgpbid:1:$ML|h[Mainspec/NEED]|h|r"],
@@ -55,7 +57,97 @@ function bepgp_bids:OnEnable()
   self.qtip:SetClampedToScreen(true)
   self.qtip:SetClampRectInsets(-100,100,50,-50)
   self.qtip:SetPoint("TOP",UIParent,"TOP",0,-50)
+
+  --bid popup gui--
+  local mainContainer = GUI:Create("Window")
+  mainContainer:SetTitle("BastionEPGP Bid")
+  mainContainer:SetWidth(330)
+  mainContainer:SetHeight(110)
+  mainContainer:EnableResize(false)
+  mainContainer:SetLayout("List")
+  mainContainer:Hide()
+
+  self._bidcontainer = mainContainer
+
+  local tophalfContainer = GUI:Create("SimpleGroup")
+  tophalfContainer:SetFullWidth(true)
+  tophalfContainer:SetHeight(33)
+  tophalfContainer:SetLayout("Flow")
+  mainContainer:AddChild(tophalfContainer)
+
+  lootItemIcon = GUI:Create("Icon")
+  lootItemIcon:SetWidth(31)
+  lootItemIcon:SetHeight(31)
+  --lootItemIcon:SetPoint("TOPLEFT")
+  tophalfContainer:AddChild(lootItemIcon)
+
+  local topHalfTextContainer = GUI:Create("SimpleGroup")
+  topHalfTextContainer:SetLayout("List")
+  topHalfTextContainer:SetHeight(33)
+  topHalfTextContainer:SetWidth(200)
+  tophalfContainer:AddChild(topHalfTextContainer)
+
+  lootItemLabel = GUI:Create("InteractiveLabel")
+  lootItemLabel:SetText("Item Name Placeholder")
+  --lootItemLabel:SetFont(nil, 10, nil)
+  topHalfTextContainer:AddChild(lootItemLabel)
+
+  lootNoteLabel = GUI:Create("InteractiveLabel")
+  lootNoteLabel:SetText("Item Note Placeholder")
+  --lootNoteLabel:SetFont(nil, 12, nil)
+  topHalfTextContainer:AddChild(lootNoteLabel)
+
+--[[
+  lootGpcostLabel = GUI:Create("Label")
+  lootGpcostLabel:SetText("Item GP Cost Placeholder")
+  --lootGpcostLabel:SetFont(nil, 14, nil)
+  tophalfContainer:AddChild(lootGpcostLabel)
+]]
+
+  local buttonContainer = GUI:Create("SimpleGroup")
+  buttonContainer:SetFullWidth(true)
+  buttonContainer:SetLayout("Flow")
+  mainContainer:AddChild(buttonContainer)
+
+  local mainspec_button = GUI:Create("Button")
+  mainspec_button:SetAutoWidth(true)
+  mainspec_button:SetText("Need/Mainspec")
+  mainspec_button:SetWidth(152)
+  mainspec_button:SetCallback("OnClick",function()
+    bepgp_bids:sendbid("+")
+  end)
+  buttonContainer:AddChild(mainspec_button)
+
+  local offspec_button = GUI:Create("Button")
+  offspec_button:SetAutoWidth(true)
+  offspec_button:SetText("Greed/Offspec")
+  offspec_button:SetWidth(152)
+  offspec_button:SetCallback("OnClick",function()
+    bepgp_bids:sendbid("-")
+  end)
+  buttonContainer:AddChild(offspec_button)
+
 end
+
+--bid popup stuff--
+function bepgp_bids:sendbid(bid)
+  if bepgp_bids.masterlooter and bid then
+    SendChatMessage(bid,"WHISPER",nil,bepgp_bids.masterlooter)
+    self._bidcontainer:Hide()
+  end
+end
+
+function bepgp_bids:bidPopup(link,masterlooter,need,greed,bid)
+  bepgp_bids.masterlooter = masterlooter
+  local _,_,_,_,_,_,_,_,_,texture = GetItemInfo(link)
+  local note = "Note: " .. bepgp:GetItemNote(link)
+  lootItemIcon:SetImage(texture)
+  lootItemIcon:SetImageSize(30,30)
+  lootNoteLabel:SetText(note)
+  lootItemLabel:SetText("Item: " .. link)
+  self._bidcontainer:Show()
+end
+--bid popup stuff--
 
 function bepgp_bids:announceWinner(data)
   local name, pr, msos = data[1], data[2], data[3]
@@ -78,6 +170,7 @@ end
 
 function bepgp_bids:Refresh()
   local frame = self.qtip
+  local note = bepgp:GetItemNote(self.bid_item.itemlink)
   if not frame then return end
   frame:Clear()
   frame:SetMovable(true)
@@ -101,6 +194,10 @@ function bepgp_bids:Refresh()
     frame:SetCell(line,1,self.bid_item.itemlink,nil,"LEFT",2)
     frame:SetCell(line,3,C:Colorize(color_msgp,self.bid_item.price),nil,"RIGHT")
     frame:SetCell(line,4,C:Colorize(color_osgp,self.bid_item.off_price),nil,"RIGHT")
+    line = frame:AddLine()
+    frame:SetCell(line,1,"Note: ",nil,"LEFT")
+    frame:SetCell(line,3,note or "no note", nil, "LEFT")
+
 
     if #(self.bids_main) > 0 then
       line = frame:AddLine(" ")
@@ -294,6 +391,7 @@ function bepgp_bids:captureLootCall(event, text, sender)
           self.qtip:Show()
         end
         self:bidPrint(itemLink,sender,mskw_found,oskw_found,whisperkw_found)
+        self:bidPopup(itemLink,sender)
       end
     end
   end
