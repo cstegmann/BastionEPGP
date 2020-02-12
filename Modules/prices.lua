@@ -460,23 +460,23 @@ local prices = {
   ----------------------
 
   -- Trash Loot --
-  [19354] = {16,"T2", "Style gear"}; --Draconic Avenger
-  [19358] = {12,"T2", "Feral>PvP"}; --Draconic Maul
-  [19362] = {32,"T2", "Orc/Edgemasters Tank>Dual Wield Fury"}; --Doom's Edge
-  [19434] = {40,"T2", "WL=SPriest"}; --Band of Dark Dominion
-  [19435] = {8,"T2", "Meh"}; --Essence Gatherer
-  [19436] = {22,"T2", "DPS War>Tank"}; --Cloak of Draconic Might
-  [19437] = {48,"T2", "Omfg stronk! No prio"}; --Boots of Pure Thought
+  [19354] = {16,"T2"}; --Draconic Avenger
+  [19358] = {12,"T2"}; --Draconic Maul
+  [19362] = {32,"T2","Orc Fury>Rest"}; --Doom's Edge
+  [19434] = {40,"T2"}; --Band of Dark Dominion
+  [19435] = {8,"T2"}; --Essence Gatherer
+  [19436] = {22,"T2","Fluffi>Klik>Fury/Cat>Enhance>Rest"}; --Cloak of Draconic Might
+  [19437] = {48,"T2"}; --Boots of Pure Thought
   [19438] = {38,"T2"}; --Ringo's Blizzard Boots
-  [19439] = {4,"T2", "Meh"}; --Interlaced Shadow Jerkin
+  [19439] = {4,"T2"}; --Interlaced Shadow Jerkin
 
   -- Shared Loot --
   [19353] = {32,"T2"}; --Drake Talon Cleaver
   [19355] = {48,"T2"}; --Shadow Wing Focus Staff
-  [19394] = {52,"T2", "Tank prio"}; --Drake Talon Pauldrons
-  [19395] = {116,"T2", "Every Healer"}; --Rejuvenating Gem
-  [19396] = {33,"T2", "Feral"}; --Taut Dragonhide Belt
-  [19397] = {40,"T2", "Shaman=Spriest>Rest"}; --Ring of Blackrock
+  [19394] = {52,"T2","Klik>Rest"}; --Drake Talon Pauldrons
+  [19395] = {116,"T2"}; --Rejuvenating Gem
+  [19396] = {33,"T2","Feral>Rest"}; --Taut Dragonhide Belt
+  [19397] = {40,"T2"}; --Ring of Blackrock
   [16913] = {32,"T2"}; --Netherwind Regalia
   [16940] = {32,"T2"}; --Dragonstalker Armor
   [16964] = {32,"T2"}; --Battlegear of Wrath
@@ -488,12 +488,12 @@ local prices = {
   [16948] = {32,"T2"}; --The Ten Storms
 
   -- Razorgore --
-  [19334] = {32,"T2","If >1PPM strong, else meh"}; --The Untamed Blade
-  [19335] = {20,"T2","Not great"}; --Spineshatter
-  [19336] = {16,"T2","Worthless"}; --Arcane Infused Gem
-  [19337] = {16,"T2","Worthless"}; --The Black Book
-  [19369] = {16,"T2","Worthless"}; --Gloves of Rapid Evolution
-  [19370] = {72,"T2","Pretty strong, Spriest=Mage/WL"}; --Mantle of the Blackwing Cabal
+  [19334] = {32,"T2"}; --The Untamed Blade
+  [19335] = {20,"T2"}; --Spineshatter
+  [19336] = {16,"T2"}; --Arcane Infused Gem
+  [19337] = {16,"T2"}; --The Black Book
+  [19369] = {16,"T2"}; --Gloves of Rapid Evolution
+  [19370] = {72,"T2"}; --Mantle of the Blackwing Cabal
   [16918] = {28,"T2"}; --Netherwind Regalia
   [16935] = {28,"T2"}; --Dragonstalker Armor
   [16959] = {28,"T2"}; --Battlegear of Wrath
@@ -505,11 +505,11 @@ local prices = {
   [16943] = {28,"T2"}; --The Ten Storms
 
   -- Vaelastrasz --
-  [19339] = {40,"T2","BiS, too cheap atm"}; --Mind Quickening Gem
-  [19340] = {16,"T2","PvP"}; --Rune of Metamorphosis
-  [19346] = {48,"T2","Tank>Dagger Rogue>Hunter"}; --Dragonfang Blade
-  [19348] = {28,"T2","Stylin'"}; --Red Dragonscale Protector
-  [19371] = {28,"T2","Maybe Shaman"}; --Pendant of the Fallen Dragon
+  [19339] = {40,"T2"}; --Mind Quickening Gem
+  [19340] = {16,"T2"}; --Rune of Metamorphosis
+  [19346] = {48,"T2","Klik>Vayu>Dagger Rogue>Rest"}; --Dragonfang Blade
+  [19348] = {28,"T2"}; --Red Dragonscale Protector
+  [19371] = {28,"T2"}; --Pendant of the Fallen Dragon
   [19372] = {44,"T2","Tank>DPS"}; --Helm of Endless Rage
   [16818] = {32,"T2"}; --Netherwind Regalia
   [16936] = {32,"T2"}; --Dragonstalker Armor
@@ -522,12 +522,12 @@ local prices = {
   [16944] = {32,"T2"}; --The Ten Storms
 
   -- Broodlord Lashlayer --
-  [19341] = {40,"T2","Tank>OT>PvP"}; --Lifegiving Gem
-  [19342] = {16,"T2","PvP"}; --Venomous Totem
-  [19350] = {40,"T2","Meh"}; --Heartstriker
-  [19351] = {92,"T2","Edgemasters/Sword spec rogue>rest"}; --"Maladath, Runed Blade of the.."
-  [19373] = {40,"T2","Meh"}; --Black Brood Pauldrons
-  [19374] = {72,"T2","Mage/WL>Spriest, until P5"}; --Bracers of Arcane Accuracy
+  [19341] = {40,"T2"}; --Lifegiving Gem
+  [19342] = {16,"T2"}; --Venomous Totem
+  [19350] = {40,"T2"}; --Heartstriker
+  [19351] = {92,"T2","Sword Rogue>Edgemasters Fury>Rest"}; --"Maladath, Runed Blade of the.."
+  [19373] = {40,"T2"}; --Black Brood Pauldrons
+  [19374] = {72,"T2","Mage/WL>Rest"}; --Bracers of Arcane Accuracy
   [20383] = {40,"T2"}; --Head of Broodlord Lashlayer
   [16912] = {32,"T2"}; --Netherwind Regalia
   [16941] = {32,"T2"}; --Dragonstalker Armor
@@ -540,41 +540,41 @@ local prices = {
   [16949] = {32,"T2"}; --The Ten Storms
 
   -- Firemaw --
-  [19343] = {20,"T2","No Curr"};--Scrolls of Blinding Light
-  [19344] = {20,"T2","PvP"}; --Natural Alignment Crystal
-  [19365] = {52,"T2","Meh"}; --Claw of the Black Drake
-  [19398] = {32,"T2","Rogues>Rest. Wars get trash mob cloak."}; --Cloak of Firemaw
+  [19343] = {20,"T2"};--Scrolls of Blinding Light
+  [19344] = {20,"T2"}; --Natural Alignment Crystal
+  [19365] = {52,"T2"}; --Claw of the Black Drake
+  [19398] = {32,"T2","Rogue>Rest"}; --Cloak of Firemaw
   [19399] = {12,"T2"}; --Black Ash Robe
   [19400] = {44,"T2","SPriest>Rest"}; --Firemaw's Clutch
   [19401] = {20,"T2"}; --Primalist's Linked Legguards
   [19402] = {24,"T2"}; --Legguards of the Fallen Crusader
 
   -- Ebonroc --
-  [19345] = {20,"T2","PvP"}; --Aegis of Preservation
+  [19345] = {20,"T2"}; --Aegis of Preservation
   [19368] = {34,"T2"}; --Dragonbreath Hand Cannon
-  [19403] = {52,"T2","WL=Mage>SPriest"}; --Band of Forced Concentration
-  [19405] = {60,"T2","Feral"}; --Malfurion's Blessed Bulwark
-  [19406] = {116,"T2","Warrior=Rogue>Rest"}; --Drake Fang Talisman
-  [19407] = {40,"T2","WL=SPriest "}; --Ebony Flame Gloves
+  [19403] = {52,"T2", "Mage/WL>Rest"}; --Band of Forced Concentration
+  [19405] = {60,"T2","Bear>Rest"}; --Malfurion's Blessed Bulwark
+  [19406] = {116,"T2","Fluffi>Klik>Fury/Rogue/Cat>Rest"}; --Drake Fang Talisman
+  [19407] = {40,"T2"}; --Ebony Flame Gloves
 
   -- Flamegor --
   [19357] = {32,"T2"}; --Herald of Woe
-  [19367] = {32,"T2","PvP Wand"}; --Dragon's Touch
-  [19430] = {52,"T2","Shaman>Rest?"}; --Shroud of Pure Thought
+  [19367] = {32,"T2"}; --Dragon's Touch
+  [19430] = {52,"T2","Shaman>Rest"}; --Shroud of Pure Thought
   [19431] = {70,"T2"}; --Styleen's Impeding Scarab
-  [19432] = {32,"T2","Tank=Feral>Dps War"}; --Circle of Applied Force
-  [19433] = {12,"T2", "BiS Fire Res"}; --Emberweave Leggings
+  [19432] = {32,"T2","Feral>Rest"}; --Circle of Applied Force
+  [19433] = {12,"T2"}; --Emberweave Leggings
 
   -- Chromaggus --
-  [19347] = {72,"T2","Spriest=Mage=WL"}; --Claw of Chromaggus
-  [19349] = {62,"T2"}; --Elementium Reinforced Bulwark
-  [19352] = {76,"T2","Sword Rogue>Rest"}; --Chromatically Tempered Sword
+  [19347] = {72,"T2"}; --Claw of Chromaggus
+  [19349] = {62,"T2","Klik>Rest"}; --Elementium Reinforced Bulwark
+  [19352] = {76,"T2","Sword Rogue>Edgemaster Fury>Rest"}; --Chromatically Tempered Sword
   [19361] = {124,"T2"}; --"Ashjre'thul, Crossbow of Smiting"
-  [19385] = {100,"T2","BiS +Healing Forever"}; --Empowered Leggings
-  [19386] = {32,"T2","Feral"}; --Elementium Threaded Cloak
-  [19387] = {84,"T2"}; --Chromatic Boots
-  [19388] = {36,"T2","WL>Rest"}; --Angelista's Grasp
-  [19389] = {44,"T2","Feral"}; --Taut Dragonhide Shoulderpads
+  [19385] = {100,"T2"}; --Empowered Leggings
+  [19386] = {32,"T2","Bear>Rest"}; --Elementium Threaded Cloak
+  [19387] = {84,"T2","Fury>Rest"}; --Chromatic Boots
+  [19388] = {36,"T2"}; --Angelista's Grasp
+  [19389] = {44,"T2","Bear>Rest"}; --Taut Dragonhide Shoulderpads
   [19390] = {24,"T2"}; --Taut Dragonhide Gloves
   [19391] = {40,"T2"}; --Shimmering Geta
   [19392] = {22,"T2"}; --Girdle of the Fallen Crusader
@@ -591,21 +591,21 @@ local prices = {
 
   -- Nefarian --
   [19003] = {52,"T2"}; --Head of Nefarian
-  [19356] = {80,"T2","Mage=WL>Rest"}; --Staff of the Shadow Flame
+  [19356] = {80,"T2","Mage/WL>Rest"}; --Staff of the Shadow Flame
   [19360] = {60,"T2","Druid/Shaman>Priest"}; --Lok'amir il Romathis
-  [19363] = {100,"T2"}; --"Crul'shoruk, Edge of Chaos"
+  [19363] = {100,"T2","Orc/Edgemaster DPS War>Rest"}; --"Crul'shoruk, Edge of Chaos"
   [19364] = {64,"T2"}; --"Ashkandi, Greatsword of the Bro.."
-  [19375] = {96,"T2"}; --"Mish'undare, Circlet of the Mind Flayer"
-  [19376] = {20,"T2","Tank Prio"}; --Archimtiros' Ring of Reckoning
-  [19377] = {76,"T2","Rogue=Hunter"}; --Prestor's Talisman of Connivery
-  [19378] = {30,"T2","SPriest>Rest"}; --Cloak of the Brood Lord
-  [19379] = {116,"T2","Mage=WL"}; --Neltharion's Tear
-  [19380] = {36,"T2"}; --Therazane's Link
-  [19381] = {84,"T2","Feral>Rogue"}; --Boots of the Shadow Flame
-  [19382] = {76,"T2","Every Healer"}; --Pure Elementium Band
-  [19366] = {52,"T2","Melee DPS without Quick Strike Ring"}; --Head of Nefarian
-  [19383] = {52,"T2","Melee DPS without Quick Strike Ring"}; --Head of Nefarian
-  [19384] = {52,"T2","Melee DPS without Quick Strike Ring"}; --Head of Nefarian
+  [19375] = {96,"T2","Mage/WL>Rest"}; --"Mish'undare, Circlet of the Mind Flayer"
+  [19376] = {20,"T2","Tank>Rest"}; --Archimtiros' Ring of Reckoning
+  [19377] = {76,"T2","Rogue>Hunter/Cat>Rest"}; --Prestor's Talisman of Connivery
+  [19378] = {30,"T2"}; --Cloak of the Brood Lord
+  [19379] = {116,"T2","Mage/WL>Rest"}; --Neltharion's Tear
+  [19380] = {36,"T2","Enhance>Rest"}; --Therazane's Link
+  [19381] = {84,"T2","Bear>Rogue/Cat"}; --Boots of the Shadow Flame
+  [19382] = {76,"T2"}; --Pure Elementium Band
+  [19366] = {52,"T2","Physical DPS>Rest"}; --Head of Nefarian
+  [19383] = {52,"T2","Physical DPS>Rest"}; --Head of Nefarian
+  [19384] = {52,"T2","Physical DPS>Rest"}; --Head of Nefarian
   [16916] = {48,"T2"}; --Netherwind Regalia
   [16942] = {48,"T2"}; --Dragonstalker Armor
   [16966] = {48,"T2"}; --Battlegear of Wrath
@@ -892,7 +892,7 @@ Search for ItemMixin
 local progress_scaling = {
   ["T3"] =   {["T3"]=1,  ["T2.5"]=1,  ["T2"]=1,  ["T1.5"]=1,["T1"]=1},
   ["T2.5"] = {["T3"]=1.5,["T2.5"]=1.5,["T2"]=2,  ["T1.5"]=2,["T1"]=2},
-  ["T2"] =   {["T3"]=2,  ["T2.5"]=2,  ["T2"]=3,  ["T1.5"]=3,["T1"]=3},
+  ["T2"] =   {["T3"]=2,  ["T2.5"]=2,  ["T2"]=3,  ["T1.5"]=3,["T1"]=4.5},
   ["T1"] =   {["T3"]=4.5,["T2.5"]=4.5,["T2"]=4.5,["T1.5"]=6,["T1"]=9}
 }
 local function get_adjusted_price(price,tier,progress)

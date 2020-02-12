@@ -78,6 +78,16 @@ function bepgp_bids:OnEnable()
   lootItemIcon = GUI:Create("Icon")
   lootItemIcon:SetWidth(31)
   lootItemIcon:SetHeight(31)
+  --[[
+  lootItemIcon:SetCallback("OnEnter", function()
+    bepgp_bids:itemTooltip()
+  end)
+
+  lootItemIcon:SetCallback("OnLeave", function()
+    GameTooltip:Hide()
+  end)
+  ]]
+
   --lootItemIcon:SetPoint("TOPLEFT")
   tophalfContainer:AddChild(lootItemIcon)
 
@@ -139,13 +149,18 @@ end
 
 function bepgp_bids:bidPopup(link,masterlooter,need,greed,bid)
   bepgp_bids.masterlooter = masterlooter
-  local _,_,_,_,_,_,_,_,_,texture = GetItemInfo(link)
+  local _,_,_,_,texture = GetItemInfoInstant(link)
   local note = "Note: " .. bepgp:GetItemNote(link)
   lootItemIcon:SetImage(texture)
   lootItemIcon:SetImageSize(30,30)
   lootNoteLabel:SetText(note)
   lootItemLabel:SetText("Item: " .. link)
   self._bidcontainer:Show()
+end
+
+function bepgp_bids:itemTooltip()
+  GameTooltip:SetHyperlink(self.bid_item.itemlink)
+  GameTooltip:Show()
 end
 --bid popup stuff--
 
