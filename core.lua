@@ -307,7 +307,7 @@ function bepgp:options()
       name = L["Raid Progress"],
       desc = L["Highest Tier the Guild is raiding.\nUsed to adjust GP Prices.\nUsed for suggested EP awards."],
       order = 90,
-      hidden = function() return not (bepgp:admin()) end,
+      --hidden = function() return not (bepgp:admin()) end,
       get = function() return bepgp.db.profile.progress end,
       set = function(info, val)
         bepgp.db.profile.progress = val

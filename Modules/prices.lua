@@ -590,7 +590,8 @@ local prices = {
   [16832] = {40,"T2"}; --Bloodfang Armor
 
   -- Nefarian --
-  [19003] = {52,"T2"}; --Head of Nefarian
+  [19002] = {52,"T2","Physical DPS>Rest"}; --Head of Nefarian
+  [19003] = {52,"T2","Physical DPS>Rest"}; --Head of Nefarian
   [19356] = {80,"T2","Mage/WL>Rest"}; --Staff of the Shadow Flame
   [19360] = {60,"T2","Druid/Shaman>Priest"}; --Lok'amir il Romathis
   [19363] = {100,"T2","Orc/Edgemaster DPS War>Rest"}; --"Crul'shoruk, Edge of Chaos"
@@ -812,7 +813,6 @@ local prices = {
   [17070] = {36,"T1.5"}; --Fang of the Mystics
   [17075] = {32,"T1.5"}; --Vis'kag the Bloodletter (More expensive than Brutality blade, worse than Deathbringer)
   [17078] = {16,"T1.5"}; --Sapphiron Drape
-
   [17111] = {16,"T1.5"}; --Blazefury Medallion
   [17112] = {20,"T1.5"}; --Empyrean Demolisher
   [17113] = {24,"T1.5"}; --Amberseal Keeper
