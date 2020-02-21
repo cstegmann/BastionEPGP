@@ -1902,7 +1902,7 @@ function bepgp:award_raid_ep(ep) -- awards ep to raid members in zone
         level = self.db.profile.guildcache[name] or 0
         self:debugPrint(string.format(L["%s is offline. Getting info from guild cache."],name))
       end
-      if level >= bepgp.VARS.minlevel then
+      if level >= bepgp.VARS.minlevel and online then
         self:givename_ep(name,ep)
       end
     end
